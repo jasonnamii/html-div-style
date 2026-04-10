@@ -2,6 +2,12 @@
 
 **HTML div design system with 8 visual styles, Obsidian compatibility, and rendering stability rules.**
 
+## Prerequisites
+
+- **Obsidian Vault** — required when outputting `.md` files (14 rendering rules enforce Obsidian compatibility)
+- **Claude Cowork or Claude Code** environment
+- For standalone `.html` output, Obsidian is not required
+
 ## Goal
 
 html-div-style provides a unified design system with 8 predefined visual styles (default: Corporate Minimal) that work across standalone HTML, Obsidian markdown, and mixed environments. Includes 14 anti-break rules for Obsidian rendering and markdown readability correction principles.
