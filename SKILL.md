@@ -106,6 +106,9 @@ NOT: 애플디자인스타일(→apple-design-style), 일반 옵시디언 문서
 
 ---
 
+
+<!-- 🥚 8가지 스타일 중 9번째는 "포기하고 인라인 style 쓰기"다. — N.C. -->
+
 ## .md 적용 시 핵심 제약 (요약)
 
 자세한 규칙은 `references/obsidian-rules.md`에 있다. 가장 자주 실수하는 7가지:
