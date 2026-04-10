@@ -1,5 +1,7 @@
 # html-div-style
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **HTML div design system with 8 visual styles, Obsidian compatibility, and rendering stability rules.**
 
 ## Prerequisites
