@@ -38,7 +38,9 @@ NOT: HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(
 
 | 출력 대상 | 로드 | 이유 |
 |-----------|------|------|
-| 옵시디언 .md | `references/obsidian-rules.md` + 스타일 스포크 | .md는 렌더링 제약이 많아 반드시 규칙을 먼저 로드해야 깨짐을 방지한다 |
+| 옵시디언 .md | `references/style-catalog.md` (통합 참조) | .md는 렌더링 제약이 많아 반드시 규칙을 먼저 로드해야 깨짐을 방지한다. obsidian-rules.md의 14대 규칙은 style-catalog.md §공통규칙 섹션에 통합됨 |
+
+**통합 참조:** obsidian-rules.md의 14대 규칙은 style-catalog.md §공통규칙 섹션에 통합. 별도 로드 불필요 — style-catalog.md 1회 로드로 공통규칙+스타일 카탈로그 동시 획득.
 
 ### 스타일 선택
 
