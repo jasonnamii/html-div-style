@@ -11,6 +11,7 @@ description: |
   - references/obsidian-rules.md
   - references/style-corporate.md
   - references/style-catalog.md
+vault_dependency: HARD
 ---
 
 <!-- Trigger Conditions
