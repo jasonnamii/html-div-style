@@ -28,11 +28,32 @@ NOT: HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(
 
 옵시디언 .md 안에서 HTML div 태그로 구조화된 시각 요소(카드, 헤더, 배지, 노트박스)를 **깨지지 않게** 삽입하는 스킬. 렌더링 안전성 + 8스타일 스펙 구현만 담당.
 
+
+## Skill Boundaries
+
+- **하는 것** — 옵시디언 .md 전용 HTML div 래퍼.
+- **안 하는 것** — HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(→design-skill), 일반 옵시디언 문서(→obsidian-markdown), UI설계 프로세스(→ui-action-designer).
+
 **범위:** 옵시디언 .md 내 div 래핑 **단 하나의 타겟**. HTML 전체 페이지(.html)는 design-skill.
 
 **디자인 종속:** design-skill CORE(3색 시스템·여백 철학)와 톤 준수. 이 스킬은 2층(HTML div) 전용.
 
 ---
+
+## When to Use
+
+- 사용자가 "적용해줘", "만들어줘", "래핑해줘", "apply", "create" 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(→design-skill), 일반 옵시디언 문서(→obsidian-markdown), UI설계 프로세스(→ui-action-designer).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## 4블록 참조 구조
 
@@ -161,7 +182,38 @@ NOT: HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(
 
 ---
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/html-div-style_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/html-div-style/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/forbidden.md` | forbidden | 해당 단계 진입 시 |
+| `references/obsidian-rules.md` | obsidian rules | 해당 단계 진입 시 |
+| `references/qc.md` | qc | 해당 단계 진입 시 |
+| `references/snippets.md` | snippets | 해당 단계 진입 시 |
+| `references/style-catalog.md` | style catalog | 해당 단계 진입 시 |
+| `references/style-corporate.md` | style corporate | 해당 단계 진입 시 |
+| `references/tokens.md` | tokens | 해당 단계 진입 시 |
+| `references/ux-principles.md` | ux principles | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `design-skill`
+- 후속 작업 → `design-skill`
+- 후속 작업 → `obsidian-markdown`
+- 후속 작업 → `ui-action-designer`
+
+## Failure Modes (Gotchas)
 
 - **디폴트 혼동:** 스타일 번호 없이 "HTML div로" → 반드시 1번. 임의 선택 금지.
 - **.html 파일로 오인:** 이 스킬 = .md 전용. .html은 design-skill.
@@ -173,3 +225,11 @@ NOT: HTML 전체 페이지 디자인(→design-skill), 애플디자인스타일(
 - **스타일 임의 변형:** "이번만 radius 16px" = N4 위반. 변형 필요 시 새 스타일 정의.
 - **`<details>` 접기 실패:** 내부 빈줄·마크다운 0 — HTML only. → forbidden ⓬.
 - **`<summary>` 삼각형:** 네이티브 토글과 중복. ▶/►/▸/▹/◀/◄/◂/◃ 금지. → forbidden ⓭.
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
